@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Feedback</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+<!--Style -->
+    <style>
+        body {
+          background-color: lightblue;
+        }
+    
+        h1 {
+          color: white;
+          text-align: center;
+        }
+    
+        p {
+          font-family: verdana;
+          font-size: 20px;
+        }
+        .display-4 {
+            color: black;
+        }
+
+        .jumbotron {
+            background-color: lightblue;
+        }
+      </style>
+
+</head>
+<body>
+    <!--Jumbotron Welcome-->
+    <div class="jumbotron text-center">
+        <div class="container">
+            <h1 class="display-4">Feedback</h1>
+            <p class="lead">Provide feedback on how to improve this site!</p>
+        </div>
+    </div>
+
+    <!--Nav Bar Class-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand nav-link-item" href="startupwebsite.html">Home</a>
+        <!--Button-->
+        <button class="navbar-toggler" 
+                type="button" 
+                data-toggle="collapse" 
+                data-target="#navbarNav"
+                aria-controls="navbarNav" 
+                aria-expanded="false" 
+                aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link nav-link-item" href="catalog.html">Catalog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-item" href="feedback.html">Feedback</a>
+                </li>
+            </ul>
+        </div>
+    </nav> 
+
+
+    <div class="container">
+        <form class="mainform">
+          <div class="form-group">
+            <label for="username">Username:</label>
+            <input id="username" type="text" class="form-control">
+            <span class="error" id="usernameError"></span>
+          </div>
+      
+          <div class="form-group">
+            <label for="title">Image Title:</label><br>
+            <textarea id="title" class="form-control"></textarea>
+            <span class="error" id="titleError"></span>
+          </div>
+      
+      
+          <div class="form-group">
+            <label for="comment">Comment:</label><br>
+            <input id="comment" type="text" class="form-control">
+            <span class="error" id="commentError"></span>
+          </div>
+      
+          <button class="btn btn-primary">Submit</button>
+        </form>
+
+
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+
+    <!-- Start: Add Bootstrap's JavaScript files for navbar functions to *work* -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- End of Bootstrap .js files-->
+
+    <script src="functions.js"></script>
+</body>
+</html>

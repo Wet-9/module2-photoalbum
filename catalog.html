@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Photos Catalog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+<!--Style -->
+    <style>
+        body {
+          background-color: lightblue;
+        }
+    
+        h1 {
+          color: white;
+          text-align: center;
+        }
+    
+        p {
+          font-family: verdana;
+          font-size: 20px;
+        }
+        .display-4 {
+            color: black;
+        }
+
+        .jumbotron {
+            background-color: lightblue;
+        }
+      </style>
+
+</head>
+<body>
+    <!--Jumbotron Welcome-->
+    <div class="jumbotron text-center">
+        <div class="container">
+            <h1 class="display-4">Catalog</h1>
+            <p class="lead">See the pictures here!</p>
+        </div>
+    </div>
+
+    <!--Nav Bar Class-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand nav-link-item" href="startupwebsite.html">Home</a>
+        <!--Button-->
+        <button class="navbar-toggler" 
+                type="button" 
+                data-toggle="collapse" 
+                data-target="#navbarNav"
+                aria-controls="navbarNav" 
+                aria-expanded="false" 
+                aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link nav-link-item" href="catalog.html">Catalog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-item" href="feedback.html">Feedback</a>
+                </li>
+            </ul>
+        </div>
+    </nav> 
+<!-- --------------------------------------------------------------------------------------------------- -->
+
+    <div class="container content">
+        <div class="row justify-content-md-center">
+            <div class="col-md-4">
+              <div class="grid-item">
+                <img src="image1.jpg" alt="Image 1" class="grid-img">
+                <h3>Image 1</h3>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="grid-item">
+                <img src="image2.jpg" alt="Image 2" class="grid-img">
+                <h3>Image 2</h3>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="grid-item">
+                <img src="image3.jpg" alt="Image 3" class="grid-img">
+                <h3>Image 3</h3>
+              </div>
+            </div>
+        </div>
+        <div class="row justify-content-md-center">
+                <div class="col-md-4">
+                  <div class="grid-item">
+                    <img src="image4.jpg" alt="Image 4" class="grid-img">
+                    <h3>Image 4</h3>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="grid-item">
+                    <img src="image5.jpg" alt="Image 5" class="grid-img">
+                    <h3>Image 5</h3>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="grid-item">
+                    <img src="image6.jpg" alt="Image 6" class="grid-img">
+                    <h3>Image 6</h3>
+                  </div>
+                </div>
+        </div>
+        <div class="row justify-content-md-center">
+            <div class="col-md-4">
+              <div class="grid-item">
+                <img src="image7.jpg" alt="Image 7" class="grid-img">
+                <h3>Image 7</h3>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="grid-item">
+                <img src="image8.jpg" alt="Image 8" class="grid-img">
+                <h3>Image 8</h3>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="grid-item">
+                <img src="image9.jpg" alt="Image 9" class="grid-img">
+                <h3>Image 9</h3>
+              </div>
+            </div>
+    </div>
+    </div>
+
+<!-- --------------------------------------------------------------------------------------------------- -->
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+
+    <!-- Start: Add Bootstrap's JavaScript files for navbar functions to *work* -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- End of Bootstrap .js files-->
+
+    <script src="functions.js"></script>
+</body>
+</html>
